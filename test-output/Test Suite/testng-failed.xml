@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Suite]">
+  <parameter name="reportpath" value="C:\\Users\\gaurav.b.kapoor\\workspace\\AOSP\\AOSP\\Report\\RunReport.html"/>
+  <parameter name="excelPath" value="C:\\Users\\gaurav.b.kapoor\\workspace\\AOSP\\AOSP\\Data\\TestData.xlsx"/>
+  <parameter name="browserType" value="chrome"/>
+  <test name="Firefox Test(failed)">
+    <parameter name="reportpath" value="C:\\Users\\gaurav.b.kapoor\\workspace\\AOSP\\AOSP\\Report\\RunReport.html"/>
+    <parameter name="excelPath" value="C:\\Users\\gaurav.b.kapoor\\workspace\\AOSP\\AOSP\\Data\\TestData.xlsx"/>
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.Automationstore.TestCases.VerifyASStatus">
+        <methods>
+          <include name="initialize"/>
+          <include name="testmanagepage"/>
+          <include name="testHomePage"/>
+        </methods>
+      </class> <!-- com.Automationstore.TestCases.VerifyASStatus -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

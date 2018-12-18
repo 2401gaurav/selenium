@@ -1,0 +1,119 @@
+@FindBy(how = How.XPATH, using = "//span[@data-original-title='Settings']")
+	public WebElement Settingsbutton;
+
+	@FindBy(how = How.XPATH, using = "//input[@value='Upload Bulk Solution']")
+	public WebElement UploadBulkSolutionbutton;
+
+	@FindBy(how = How.XPATH, using = "//input[@ng-click='showNewSolutionForm($event)']")
+	public WebElement showNewSolutionFormbutton;
+
+	@FindBy(how = How.XPATH, using = ".//input[@ng-model='newClassification.name']")
+	public WebElement classificationName;
+
+	@FindBy(how = How.XPATH, using = ".//input[@ng-model='newClassification.description']")
+	public WebElement classificationDescription;
+
+	@FindBy(how = How.XPATH, using = ".//textarea[@ng-model='newClassification.solution']")
+	public WebElement classificationSolution;
+
+	@FindBy(how = How.XPATH, using = ".//input[@value='Create']")
+	public WebElement CreateButton;
+
+	@FindBy(how = How.XPATH, using = ".//input[@value='Cancel']")
+	public WebElement CancelButton;
+
+	@FindBy(how = How.XPATH, using = ".//*[@id='trainingUpload']/div[2]/p")
+	public WebElement Disclaimer;
+
+	@FindBy(how = How.XPATH, using = ".//a[@data-target='#similarityData']")
+	public WebElement SimilarityTraining;
+
+	@FindBy(how = How.XPATH, using = ".//li[@id='incidents-tour-tab1']/a")
+	public WebElement ReadyforResolutionButton;
+
+	@FindBy(how = How.XPATH, using = ".//a[contains(.,'Resolved Incidents')]")
+	public WebElement ResolvedIncidents;
+
+	@FindBy(how = How.XPATH, using = ".//*[@id='dialogContent_0']/p")
+	public WebElement IncidenceStatus;
+
+	@FindBy(how = How.XPATH, using = ".//input[@ng-click='incidentRedirect()']")
+	public WebElement incidentRedirectOkButton;
+
+	@FindBy(how = How.XPATH, using = ".//a[contains(.,'Require Analysis')]")
+	public WebElement RequireAnalysisTab;
+
+	@FindBy(how = How.XPATH, using = ".//input[@ng-model='searchRecommendation']")
+	public WebElement searchRecommendation;
+
+	@FindBy(how = How.XPATH, using = ".//input[@ng-model='searchResolvedIncidents']")
+	public WebElement searchResolvedIncidents;
+
+	@FindBy(how = How.XPATH, using = ".//div[@id='readyForResol']/md-content/md-table/div/table/tbody/tr/td/a[@ng-click='showIncidentDetail($event,$index,c)']")
+	public List<WebElement> readyForResolList;
+
+	@FindBy(how = How.XPATH, using = ".//div[@id='reqAnalysis']/md-content/md-table/div/table/tbody/tr/td/a[@ng-click='showIncidentDetail($event,$index,c)']")
+	public List<WebElement> reqAnalysisList;
+
+	@FindBy(how = How.XPATH, using = ".//div[@id='autoResolInc']/md-content/md-table/div/table/tbody/tr/td/a[@ng-click='showIncidentDetail($event,$index,c)']")
+	public List<WebElement> autoResolIncList;
+
+	@FindBy(how = How.XPATH, using = ".//input[@ng-model='siteConfig.useShortDescriptionForML']")
+	public WebElement useShortDescriptionForML;
+
+	@FindBy(how = How.XPATH, using = ".//input[@ng-model='siteConfig.useFullDescriptionForML']")
+	public WebElement useFullDescriptionForML;
+
+	@FindBy(how = How.XPATH, using = ".//input[@ng-model='siteConfig.oneClickResolution']")
+	public WebElement oneClickResolutionForML;
+
+	@FindBy(how = How.XPATH, using = ".//input[@ng-model='siteConfig.authUserIdType']")
+	public WebElement oneClickAuthenticationForML;
+
+	@FindBy(how = How.XPATH, using = ".//*[@id='similarityData']/md-content/md-table/div[2]/span[4]/a[4]/i")
+	public WebElement similarityDataNextButton;
+
+	@FindBy(how = How.XPATH, using = ".//*[@id='preSolutions']/md-content/md-table/div[2]/span[3]/a[4]/i")
+	public WebElement preSolutionsDataNextButton;
+
+	@FindBy(how = How.XPATH, using = ".//*[@id='trainingUpload']/div[2]/div/div/ul/li/a")
+	public List<WebElement> Tab;
+
+	@FindBy(how = How.XPATH, using = ".//b[text()='Training Status : ']/following-sibling::span")
+	public WebElement TrainingStatus;
+
+	@FindBy(how = How.XPATH, using = ".//a[text()='Training Data Upload']")
+	public WebElement TrainingDataUpload;
+
+	@FindBy(how = How.XPATH, using = ".//a[text()='Training Data Template']")
+	public WebElement TrainingDataTemplate;
+
+	@FindBy(how = How.XPATH, using = "//div[@class='tab-pane active']/md-content/md-table/div/table/tbody/tr/td[1]")
+	public List<WebElement> similaritylist;
+
+	@FindBy(how = How.XPATH, using = ".//div[@class='col-xs-12 col-sm-8']/ul/li/a")
+	public List<WebElement> SettingTab;
+
+	@FindBy(how = How.XPATH, using = ".//md-content[@ng-controller='AITRIncidentsCtrl']/div/div/ul/li/a")
+	public List<WebElement> IncidentTab;
+
+	@FindBy(how = How.XPATH, using = ".//p/label/span[@class='radio-inline']")
+	public List<WebElement> radio;
+
+	@FindBy(how = How.XPATH, using = ".//tr/td[@class='ng-scope'][1]/p")
+	public List<WebElement> clasificationlist;
+
+	@FindBy(how = How.XPATH, using = "//span[text()='Catalgoue Name']/following::tbody/tr/td[1]/p")
+	public List<WebElement> ClassificationName;
+
+	@FindBy(how = How.XPATH, using = ".//md-table[@name='classificationData']/div/table/tbody/tr/td[@class='ng-binding ng-scope']")
+	public List<WebElement> UploadClassificationName;
+
+	@FindBy(how = How.XPATH, using = ".//*[@id='settings-tour-tab2']/a")
+	public WebElement PredefinedSolutions;
+
+	@FindBy(how = How.XPATH, using = ".//input[@ng-model='siteConfig.resolutionServiceUrl]")
+	public WebElement oneClickResolutionInput;
+
+	@FindBy(how = How.XPATH, using = ".//input[@value='Upload Bulk Solution']")
+	public WebElement UploadBulk;
